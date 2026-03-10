@@ -1,0 +1,14 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Animasi halus untuk progress bar */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+#cpu-bar, #ram-bar {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
