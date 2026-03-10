@@ -52,10 +52,13 @@ sudo git clone https://github.com/dihkaw/webinfophp .
 
 Opsi 2: Melalui Wget (Single File Zip)
 ```
-sudo wget https://github.com/dihkaw/webinfophp
-sudo apt install unzip -y
+cd /var/www/html
+sudo rm -f index.html                           # Hapus file lama (index.html bawaan Apache)
+sudo wget https://github.com/dihkaw/webinfophp  # Download file ZIP (Gunakan link /archive/refs/heads/main.zip)
+sudo apt install unzip -y                       # Install unzip dan ekstrak
 sudo unzip main.zip
-sudo mv repo-anda-main/* .
+sudo mv webinfophp-main/* .                     # Pindahkan isi dari folder hasil ekstrak ke folder saat ini (.)
+sudo rm -rf main.zip webinfophp-main            # Bersihkan file sisa
 ```
 
 ### Pengaturan Izin (Penting)
