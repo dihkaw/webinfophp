@@ -54,7 +54,7 @@ Opsi 2: Melalui Wget (Single File Zip)
 ```
 cd /var/www/html
 sudo rm -f index.html                           # Hapus file lama (index.html bawaan Apache)
-sudo wget https://github.com/dihkaw/webinfophp  # Download file ZIP (Gunakan link /archive/refs/heads/main.zip)
+sudo sudo wget https://github.com/dihkaw/webinfophp/archive/refs/heads/main.zip  # Download file ZIP (Gunakan link /archive/refs/heads/main.zip)
 sudo apt install unzip -y                       # Install unzip dan ekstrak
 sudo unzip main.zip
 sudo mv webinfophp-main/* .                     # Pindahkan isi dari folder hasil ekstrak ke folder saat ini (.)
